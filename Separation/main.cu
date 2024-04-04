@@ -37,7 +37,7 @@ typedef struct {
 //**************************************************************
 
 int N = 5000;
-float L = 19.0f;
+float L = 300.0f;
 float sigma= 1.0;
 float epsilon = 1.0;
 float T = 300.0f;
