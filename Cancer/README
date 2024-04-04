@@ -1,0 +1,2 @@
+1) Compile the main code: nvcc md.cu dcdio.cpp psfio.cpp -o tumor
+2) Run ./tumor
