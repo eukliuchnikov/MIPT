@@ -1,8 +1,8 @@
 1) In createXYZ.cpp change the dimensions of the box (Lx, Ly, Lz) and the number of particles (N)
 2) Compile createXYZ: g++ createXYZ.cpp pdbio.cpp xyzio.cpp -o cxyz
-3) Run ./cxyz to create initial coordinate file: Atomscoor.xyz
+3) Run ./cxyz to create the initial coordinate file: Atomscoor.xyz
 
-4) In main_thromb.cu hcange the line according to your dimensions: 
+4) In main_thromb.cu change the line according to your dimensions: 
         float3 L = make_float3(1000.0f, 100.0f, 100.0f);   
 5) In file LJPar change the last two columns (A and B) according to your task. 
    These are the parameters in Lennard-Jones potential (U(r) = e[A(s/r)^12 + B(s/r)^6])
