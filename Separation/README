@@ -1,0 +1,11 @@
+1) In createXYZ.cpp change the dimensions of the box (Lx = Ly = Lz) and the number of particles (N)
+2) Compile createXYZ: g++ createXYZ.cpp pdbio.cpp xyzio.cpp -o cxyz
+3) Run ./cxyz to create initial coordinate file: Atomscoor.xyz
+
+4) In main.cu change the dimensions of the box (L) and the number of particles (N)
+5) In main.cu in the line:
+        	readLJPar("LJPar", &lj);
+   choose LJPar to simulate phase separation and LJPar_AB to simulate crystallisation. 
+   These are the parameters in Lennard-Jones potential (U(r) = e[A(sigma/r)^12 + B(sigma/r)^6])
+6) Compile the main code: nvcc main.cu dcdio.cpp pdbio.cpp psfio.cpp xyzio.cpp hicio.cpp -o box
+7) Run ./box
